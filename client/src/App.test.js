@@ -19,7 +19,7 @@ describe('App component', () => {
     rtl.render(<App />);
   });
 
-  it('player data fetched and displaying', async () => {
+  it('fetched player data and rendered to DOM', async () => {
     const { getAllByTestId, getAllByText } = rtl.render(<App />);
     await rtl.waitForElement(() => getAllByTestId('player-name'));
     await rtl.waitForElement(() => getAllByTestId('player-country'));
