@@ -41,21 +41,19 @@ const Div = styled.div`
   }
 `;
 
-export const Player = ({ player }) => {
-  return (
-    <Div className='player-card'>
-      <h2>{player.id + 1}</h2>
-      <ul>
-        <li>
-          <span>Name:</span> {player.name}
-        </li>
-        <li>
-          <span>Country:</span> {player.country}
-        </li>
-        <li>
-          <span>Searches:</span> {player.searches}
-        </li>
-      </ul>
-    </Div>
-  );
-};
+export const Player = ({ player }) => (
+  <Div className='player-card'>
+    <h2>{player.id + 1}</h2>
+    <ul>
+      <li>
+        <span>Name:</span> {player.name}
+      </li>
+      <li>
+        <span>Country:</span> {player.country}
+      </li>
+      <li>
+        <span>Searches:</span> {player.searches}
+      </li>
+    </ul>
+  </Div>
+);

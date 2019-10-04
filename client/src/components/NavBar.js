@@ -26,6 +26,7 @@ export const NavBar = () => {
     e.preventDefault();
     setDarkMode(!darkMode);
   };
+
   return (
     <Nav className='navbar'>
       <h1>Womens World Cup</h1>

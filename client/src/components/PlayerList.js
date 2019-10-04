@@ -10,10 +10,14 @@ const Div = styled.div`
 `;
 
 export const PlayerList = ({ players }) => {
+  if (!players || !players.length) {
+    return <div style={{ textAlign: 'center' }}>Loading...</div>;
+  }
+
   return (
     <Div className='players-container'>
       {players.map(player => (
-        <Player player={player} key={player.id} />
+        <Player data-testid='player-name' player={player} key={player.id} />
       ))}
     </Div>
   );
