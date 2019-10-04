@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import { PlayerList } from './components/PlayerList';
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <div>
         <h1>Hello World</h1>
+        <PlayerList players={this.state.players} />
       </div>
     );
   }
